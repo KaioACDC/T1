@@ -18,4 +18,10 @@ contains
         vvariancia = sum((valor - y)**2) / real (x)
     end function variancia
 
+    function desviop (vvariancia) result (vdesvio)
+        real, intent (in) :: vvariancia
+        real :: vdesvio
+        vdesvio = sqrt (vvariancia)
+    end function desviop
+
     
