@@ -10,4 +10,7 @@ program estatisticac
     print*, 'Informe o nome do arquivo'
     read (*, "(A)") nomearquivo
 
-    
+    y = media (dados, x)
+    vvariancia = variancia (dados, x, y)
+    vdesvio = desviop (vvariancia)
+
