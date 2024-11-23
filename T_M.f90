@@ -24,4 +24,5 @@ contains
         vdesvio = sqrt (vvariancia)
     end function desviop
 
-    
+    subroutine leitura_dados (nomearquivo, valor, x)
+        
