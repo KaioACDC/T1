@@ -18,3 +18,5 @@ program estatisticac
     print*, 'Media:', y
     print*, 'Variancia:', vvariancia
     print*, 'Desvio padrao:', vdesvio 
+
+end program estatisticac
