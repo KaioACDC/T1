@@ -14,3 +14,7 @@ program estatisticac
     vvariancia = variancia (dados, x, y)
     vdesvio = desviop (vvariancia)
 
+    print*, 'Resultados'
+    print*, 'Media:', y
+    print*, 'Variancia:', vvariancia
+    print*, 'Desvio padrao:', vdesvio 
