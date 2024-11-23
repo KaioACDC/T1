@@ -52,3 +52,4 @@ contains
         close(iunidade)
     end subroutine
 
+end module estatistica
