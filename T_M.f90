@@ -25,4 +25,30 @@ contains
     end function desviop
 
     subroutine leitura_dados (nomearquivo, valor, x)
-        
+        character (*), intent(in) :: nomearquivo
+        real, allocatable, dimension (:), intent (out) :: valor
+        integer, intent (out) :: x 
+        integer :: iunidade, i
+
+        iunidade = 10
+
+        open(iunidade, file=nomearquivo, status='old', action='read')
+        x=0
+
+        do 
+            read (iunidade, *, iostat=i)
+            if (i/=0) exit
+            x = x + 1    
+        end do
+
+        rewind(iunidade)
+
+        allocate(valor(x))
+
+        do i = 1, x
+            read(iunidade, *) valor(i)
+        end do
+
+        close(iunidade)
+    end subroutine
+
