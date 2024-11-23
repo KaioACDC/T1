@@ -7,4 +7,7 @@ program estatisticac
     integer :: x
     character(len=100) :: nomearquivo
 
+    print*, 'Informe o nome do arquivo'
+    read (*, "(A)") nomearquivo
+
     
